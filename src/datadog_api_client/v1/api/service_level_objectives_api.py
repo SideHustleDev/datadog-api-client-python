@@ -667,7 +667,7 @@ class ServiceLevelObjectivesApi:
     def update_slo(
         self,
         slo_id: str,
-        body: ServiceLevelObjective,
+        body: ServiceLevelObjectiveRequest,
     ) -> SLOListResponse:
         """Update an SLO.
 
@@ -676,7 +676,7 @@ class ServiceLevelObjectivesApi:
         :param slo_id: The ID of the service level objective object.
         :type slo_id: str
         :param body: The edited service level objective request object.
-        :type body: ServiceLevelObjective
+        :type body: ServiceLevelObjectiveRequest
         :rtype: SLOListResponse
         """
         kwargs: Dict[str, Any] = {}
